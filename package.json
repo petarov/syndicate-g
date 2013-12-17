@@ -11,8 +11,9 @@
     "start": "NODE_ENV=development ./node_modules/.bin/nodemon ./app/server.js"
   },
   "dependencies": {
-    "express": "latest",
     "nodemon": "latest",
-    "underscore": "latest"
+    "underscore": "latest",
+    "express": "latest",
+    "ejs": "latest"
   }
 }
