@@ -1,10 +1,17 @@
-/**
- * server.js
+/*
+ * syndicate-g.js
+ * https://github.com/petarov/syndicate-g
+ *
+ * The MIT License (MIT)
+ * Copyright (c) 2013 Petar Petrov
  */
+
+
 
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
+var syng = require('../lib/syndicate-g.js');
 
 app.configure(function() {
     // app.locals.pretty = true;
@@ -25,6 +32,6 @@ server.listen(8080, function() {
 });
 
 /**
- * Return
+ * Exports
  */
 module.exports = app;
