@@ -1,5 +1,5 @@
 /**
- * app.js
+ * server.js
  */
 
 var express = require('express');
