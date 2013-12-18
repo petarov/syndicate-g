@@ -17,10 +17,11 @@
     "nodemon": "latest",
     "underscore": "latest",
     "express": "3.x",
-    "ejs": "0.8.x"
+    "ejs": "0.8.x",
+    "sqlite3": "2.1.x"
   },
   "license": "MIT",
   "engines": {
     "node": ">=0.8"
-  }  
+  }
 }
