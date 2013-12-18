@@ -1,19 +1,26 @@
 {
   "name": "syndicate-g",
-  "description": "",
   "version": "0.0.1",
   "author": {
     "name": "Petar Petrov",
     "email": "",
     "web": ""
   },
+  "description": "",
+  "homepage": "https://github.com/petarov/syndicate-g",
+  "main": "./lib/syndicate-g",
   "scripts": {
-    "start": "NODE_ENV=development ./node_modules/.bin/nodemon ./app/server.js"
+    "start": "NODE_ENV=development ./node_modules/.bin/nodemon ./app/server.js",
+    "start_win": "SET NODE_ENV=development & node_modules\\.bin\\nodemon.cmd app\\server.js"
   },
   "dependencies": {
     "nodemon": "latest",
     "underscore": "latest",
-    "express": "latest",
-    "ejs": "latest"
-  }
+    "express": "3.x",
+    "ejs": "0.8.x"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }  
 }
