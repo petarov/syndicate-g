@@ -7,8 +7,8 @@
  */
 "use strict";
 
-var config = require('../config.js');
-var syng = require('../lib/syndicate-g.js')(config).create();
+var config = require('./config.js');
+var syng = require('./lib/syndicate-g.js')(config).create();
 
 var express = require('express');
 var app = express();
