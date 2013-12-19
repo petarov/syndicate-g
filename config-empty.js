@@ -10,6 +10,7 @@ var config = {
     debug: false,
 
     server: {
+    	url: '',
         port: 8080
     },
 

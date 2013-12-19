@@ -32,7 +32,7 @@ app.get('/fetch/:id', function(request, response) {
         if (error)
             console.log(error);
 
-        response.writeHead(200, {'Content-Type': 'text/plain'});
+        response.writeHead(200, {'Content-Type': 'text/xml'});
         response.end(data); 
     });
 });
