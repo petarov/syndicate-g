@@ -20,7 +20,7 @@ var config = {
 
     gplus: {
         apiKey: "",
-        maxPosts: 3,
+        maxResults: 10,
     }
 };
 
