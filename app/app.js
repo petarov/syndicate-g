@@ -5,9 +5,10 @@
  * The MIT License (MIT)
  * Copyright (c) 2013 Petar Petrov
  */
+"use strict";
 
 var config = require('../config.js');
-var syng = require('../lib/syndicate-g.js').create(config);
+var syng = require('../lib/syndicate-g.js')(config).create();
 
 var express = require('express');
 var app = express();

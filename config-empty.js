@@ -7,11 +7,15 @@
  */
 
 var config = {
-    debug: false,
+    isDebug: false,
 
     server: {
-    	url: '',
+        url: '',
         port: 8080
+    },
+
+    db: {
+        path: './data.ldb'
     },
 
     gplus: {
