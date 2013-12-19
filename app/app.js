@@ -23,13 +23,18 @@ app.configure(function() {
 
 app.get('/', function(request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end(data); 
-    
-    syng.fetch('', function(data) {
-    });
-
-    // response.end('hello world!');    
+    response.end('hello world!');    
     // response.render('', {pretty: true});
+});
+
+app.get('/fetch/:id', function(request, response) {
+    syng.fetch(request.params.id, function(error, data) {
+        if (error)
+            console.log(error);
+
+        response.writeHead(200, {'Content-Type': 'text/plain'});
+        response.end(data); 
+    });
 });
 
 server.listen(config.server.port, function() {
