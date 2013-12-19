@@ -18,8 +18,8 @@
     "underscore": "latest",
     "express": "3.x",
     "ejs": "0.8.x",
-    "sqlite3": "2.1.x",
-    "request": "~2.30.0"
+    "request": "~2.30.0",
+    "levelup": "~0.18.2"
   },
   "license": "MIT",
   "engines": {
