@@ -29,7 +29,11 @@ app.get('/', function(request, response) {
 });
 
 app.get('/fetch/:id', function(request, response) {
-    syng.fetch(request.params.id, function(err, data) {
+    var maxResults = request.query.maxResults;
+    if (!/^\-?([0-9]+|Infinity)$/.test(maxResults))
+        maxResults = config.gplus.maxResults;
+
+    syng.fetch(request.params.id, {'maxResults': maxResults}, function(err, data) {
         if (err) {
             console.log(err);
             response.send(err.code, err);
