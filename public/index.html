@@ -50,30 +50,44 @@
     <!-- search -->
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <h3 class="text-center">Google Plus Id</h3>
-          <form class="form-horizontal" role="form">
-            
-            <div class="input-group input-group-lg">
-              <input type="text" class="form-control typeahead" id="search" placeholder="118355576984899086023‎" />
-              <div class="input-group-btn">
-                <button id="btnSearch" class="btn btn-primary" type="button" tabindex="-1">
-                  <span class="glyphicon glyphicon-refresh"></span>
-                </button>
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
-                  <span class="caret"></span>
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>                
-                <ul class="dropdown-menu pull-right" role="menu">
-                  <li><a href="#">Fetch Feed</a></li>
-                  <li><a href="#">Clear Cache</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">I'm Feeling Lucky</a></li>
-                </ul>                
-              </span>
-              </div>
-            </div>     
 
-          </form>
+          <div class="alert alert-danger" style="display: none">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>Warning!</strong> Best check yo self, you're not looking too good.
+          </div>
+
+          <div class="alert alert-success" style="display: none">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>Warning!</strong> Best check yo self, you're not looking too good.
+          </div>          
+
+          <div class="search">
+            <h3 class="text-center">Google Plus Posts To RSS</h3>
+            <form class="form-horizontal" role="form">
+              
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control typeahead" id="search" placeholder="Google Plus User ID" />
+                <div class="input-group-btn">
+                  <button id="btnSearch" class="btn btn-primary" type="button" tabindex="-1">
+                    <span class="glyphicon glyphicon-refresh"></span>
+                  </button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>                
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a data-action="fetch" href="#">Fetch Feed</a></li>
+                    <li><a data-action="clearcache" href="#">Clear Cache</a></li>
+                    <li class="divider"></li>
+                    <li><a data-action="flucky" id="" href="#">I'm Feeling Lucky</a></li>
+                  </ul>                
+                </span>
+                </div>
+              </div>     
+
+            </form>
+          </div>
+          
         </div>
       </div>
 
@@ -82,19 +96,22 @@
       <footer>
         <p>&copy; 2013 Petar Petrov</p>
       </footer>
-    </div> <!-- /container -->        
+    </div> <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() { 
+      app.run(); 
+    });
+    </script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
     </body>
 </html>
