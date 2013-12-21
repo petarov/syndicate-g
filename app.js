@@ -47,8 +47,7 @@ app.get('/clear/:id', function(request, response) {
             response.send(err.code, err);
             return;
         }
-        response.writeHead(200, {'Content-Type': 'text/xml'});
-        response.end(data); 
+        response.send(200);
     });
 });
 
