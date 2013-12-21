@@ -52,7 +52,7 @@ app.get('/clear/:id', function(request, response) {
 });
 
 server.listen(config.server.port, function() {
-    console.log("It's on, borther.");
+    console.log("[Srv] It's on, brother.");
 });
 
 /**
