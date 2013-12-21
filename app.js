@@ -23,9 +23,9 @@ app.configure(function() {
 });
 
 app.get('/', function(request, response) {
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('hello world!');    
-    // response.render('', {pretty: true});
+    // response.writeHead(200, {'Content-Type': 'text/plain'});
+    // response.end('hello world!');    
+    response.render('index.html', {pretty: true});
 });
 
 app.get('/fetch/:id', function(request, response) {
