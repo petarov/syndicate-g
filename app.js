@@ -29,10 +29,24 @@ app.get('/', function(request, response) {
 });
 
 app.get('/fetch/:id', function(request, response) {
-    syng.fetch(request.params.id, function(error, data) {
-        if (error)
-            console.log(error);
+    syng.fetch(request.params.id, function(err, data) {
+        if (err) {
+            console.log(err);
+            response.send(err.code, err);
+            return;
+        }
+        response.writeHead(200, {'Content-Type': 'text/xml'});
+        response.end(data); 
+    });
+});
 
+app.get('/clear/:id', function(request, response) {
+    syng.deleteCache(request.params.id, function(err) {
+        if (err) {
+            console.log(err);
+            response.send(err.code, err);
+            return;
+        }
         response.writeHead(200, {'Content-Type': 'text/xml'});
         response.end(data); 
     });
