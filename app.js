@@ -23,8 +23,6 @@ app.configure(function() {
 });
 
 app.get('/', function(request, response) {
-    // response.writeHead(200, {'Content-Type': 'text/plain'});
-    // response.end('hello world!');    
     response.render('index.html', {pretty: true});
 });
 
