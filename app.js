@@ -19,6 +19,7 @@ app.configure(function() {
     app.use(express.bodyParser());
     app.use(express.static(__dirname + '/public'));
     app.use(express.logger());
+    app.set('views', __dirname + '/public');
     app.engine('html', require('ejs').renderFile);
 });
 
@@ -51,6 +52,10 @@ app.get('/clear/:id', function(request, response) {
         }
         response.send(200);
     });
+});
+
+app.get('*', function(request ,response) {
+    response.status(404).render('404.html', {pretty: true});
 });
 
 server.listen(config.server.port, function() {
