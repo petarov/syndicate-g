@@ -1,11 +1,11 @@
 syndicate-g
 ===========
 
-g+2rss
+Convert Google Plus _Public_ posts to RSS feed.
 
 ## Usage
 
 ## Tests
 
 ## License
-[MIT](LICENSE) License
+[MIT License](LICENSE)
