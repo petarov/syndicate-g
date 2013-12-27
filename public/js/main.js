@@ -13,6 +13,37 @@ var app = {
         useJsonp: false
     },
 
+    // uhm...the following are completely random. Honestly!
+    luckyGPlusers: [
+        '101331798622156353891',
+        '+LinusTorvalds',
+        '+TeamCoco',
+        '104560124403688998123',
+        '+LarryPage',
+        '+EnriqueIglesias',
+        '+MariahCarey',
+        '+Madonna',
+        '+iamwill',
+        '100300281975626912157',
+        '+AprilSummers',
+        '112009945208508693556',
+        '+TaylorSwift',
+        '+SnoopDogg',
+        '+RichardBranson',
+        '+JessiJune',
+        '+britneyspears',
+        '+DollyParton',
+        '+myspacetom',
+        '+VeronicaBelmont',
+        '+JeriRyan',
+        '+LilWayne',
+        '+ParisHilton',
+        '+TyraBanks',
+        '+50Cent',
+        '101483533411566453214',
+        '+TreySongz'
+    ],
+
     init: function() {
         //TODO
     },
@@ -109,6 +140,8 @@ var app = {
      * Select some random user ID ..yay!
      */
     onFeelingLucky: function() {
-        //TODO
+        var gid = this.luckyGPlusers[Math.floor(Math.random() * this.luckyGPlusers.length)];
+        $('#search').val(gid);
+        this.onSearch();
     }
 };
