@@ -8,20 +8,32 @@
 
 var config = {
     isDebug: false,
-
+    /**
+     * Server connection
+     */
     server: {
         url: '',
         port: 8080
     },
-
+    /**
+     * Local database storage
+     */
     db: {
         path: './data.ldb'
     },
-
+    /**
+     * GPlus settings
+     */
     gplus: {
         apiKey: "",
         maxResults: 10,
-    }
+    },
+    /**
+     * Feed generation options
+     */
+    rss: {
+        ttl: 60
+    }    
 };
 
 module.exports = config;
