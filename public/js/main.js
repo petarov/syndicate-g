@@ -15,7 +15,7 @@ var app = {
 
     // uhm...the following are completely random. Honestly!
     luckyGPlusers: [
-        '101331798622156353891',
+        '118355576984899086023',
         '+LinusTorvalds',
         '+TeamCoco',
         '104560124403688998123',
