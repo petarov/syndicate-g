@@ -58,7 +58,7 @@ app.get('*', function(request ,response) {
     response.status(404).render('404.html', {pretty: true});
 });
 
-server.listen(config.server.port, function() {
+server.listen(config.server.port, config.server.host, function() {
     console.log("[Srv] It's on, brother.");
 });
 
