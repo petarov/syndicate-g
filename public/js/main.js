@@ -41,7 +41,10 @@ var app = {
         '+TyraBanks',
         '+50Cent',
         '101483533411566453214',
-        '+TreySongz'
+        '+TreySongz',
+        '109226156395384428416',
+        '+BarackObama',
+        '103710545634922403702'
     ],
 
     init: function() {
