@@ -11,13 +11,13 @@ Required software:
 
 ## Getting Started
 
-Copy `config-empty.js` to `config.js`. Edit the config file and adjust the server and Google Plus settings.
+Copy `config-empty.js` to `config.js`. Edit the config file and adjust the server, db and Google+ settings.
 
 Start the server using `npm start` under Linux or `npm  run-script start_win` under Windows.
 
 ## Usage
 
-Open `http://localhost:8080` in the browser.
+Open `http://localhost:8080` in browser.
 
 ## License
 [MIT License](LICENSE)
