@@ -16,12 +16,6 @@ var config = {
         port: 8080
     },
     /**
-     * Local database storage
-     */
-    db: {
-        path: './data.ldb'
-    },
-    /**
      * GPlus settings
      */
     gplus: {
