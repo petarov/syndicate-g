@@ -17,3 +17,10 @@
 /*.search-title > img {
     vertical-align: middle;
 }*/
+
+#ajaxloader {
+    margin: 24px auto 0;
+    width: 66px;
+    height: 66px;
+    display: none;
+}

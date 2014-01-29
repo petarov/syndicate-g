@@ -119,8 +119,10 @@ var app = {
      */
     onSearch: function() {
         var query = $('#search').val().trim();
-        if (query.length > 0)
+        if (query.length > 0) {
+            $('#ajaxloader').show();
             window.location = '/fetch/' + query;
+        }
     },
     /**
      * Clear cached data for user given profile/user ID
