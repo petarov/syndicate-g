@@ -27,12 +27,23 @@ app.get('/', function(request, response) {
     response.render('index.html', {pretty: true});
 });
 
+app.get('/fetch', function(request, response) {
+    fetch(request, response);
+});
+
 app.get('/fetch/:id', function(request, response) {
+    fetch(request, response);
+});
+
+function fetch(request, response) {
     var maxResults = request.query.maxResults;
     if (!/^\-?([0-9]+|Infinity)$/.test(maxResults))
         maxResults = config.gplus.maxResults;
 
-    syng.fetch(request.params.id, {'maxResults': maxResults}, function(err, data) {
+    // console.log(request.query);
+    var gid = request.query.gid || request.params.id;
+
+    syng.fetch(gid, {'maxResults': maxResults}, function(err, data) {
         if (err) {
             console.log(err);
             response.send(err.code, err);
@@ -40,8 +51,8 @@ app.get('/fetch/:id', function(request, response) {
         }
         response.writeHead(200, {'Content-Type': 'text/xml'});
         response.end(data); 
-    });
-});
+    });    
+}
 
 app.get('/clear/:id', function(request, response) {
     syng.deleteCache(request.params.id, function(err) {
