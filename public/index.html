@@ -16,6 +16,10 @@
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
+            .center {
+              margin: 0 auto;
+              text-align: center;
+            }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -35,15 +39,8 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Syndicate-G</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="https://github.com/petarov/syndicate-g">Fork It!</a></li>
-            <!-- <li><a href="#about">About</a></li> -->
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
+        </div> 
+     </div>
     </div>
 
     <div class="container">
@@ -86,12 +83,16 @@
                     <li class="divider"></li>
                     <li><a data-action="flucky" id="" href="#">I'm Feeling Lucky</a></li>
                   </ul>                
-                </span>
                 </div>
               </div>     
 
             </form>
           </div><!-- class="search" -->
+
+          <div class="center">
+            <a class="github-button" href="https://github.com/petarov/syndicate-g/fork" data-icon="octicon-git-branch" data-style="mega" aria-label="Fork petarov/syndicate-g on GitHub">Fork</a>
+            <a class="github-button" href="https://github.com/petarov/syndicate-g/issues" data-icon="octicon-issue-opened" data-style="mega" aria-label="Issue petarov/syndicate-g on GitHub">Issue</a>
+          </div>
 
         </div>
       </div>
@@ -99,7 +100,10 @@
       <hr>
 
       <footer>
-        <p>&copy; 2014 Petar Petrov <span class="pull-right">Icons by <a href="http://www.awicons.com">Lokas Software</a></span></p>
+        <p>
+          <a href="https://github.com/petarov/syndicate-g/blob/master/LICENSE">&copy; 2015 Petar Petrov</a>
+          <span class="pull-right">Icons by <a href="http://www.awicons.com">Lokas Software</a></span>
+        </p>
       </footer>
     </div> <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -111,7 +115,7 @@
       app.run(); 
     });
     </script>
-
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

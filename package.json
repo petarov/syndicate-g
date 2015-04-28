@@ -1,12 +1,12 @@
 {
   "name": "syndicate-g",
+  "description": "Node.js service that converts Google+ public posts to RSS feeds.",
   "version": "1.0.1",
   "author": {
     "name": "Petar Petrov",
-    "email": "petar.petrov.georgiev@gmail.com",
+    "email": "",
     "web": "http://petarov.vexelon.net/"
   },
-  "description": "",
   "homepage": "https://github.com/petarov/syndicate-g",
   "repository" : {"type": "git", "url": "https://github.com/petarov/syndicate-g.git"},
   "main": "./lib/syndicate-g",
@@ -15,13 +15,13 @@
     "start_win": "SET NODE_ENV=development & node_modules\\.bin\\nodemon.cmd app.js"
   },
   "dependencies": {
-    "nodemon": "~1.0.14",
-    "underscore": "~1.5.2",
+    "nodemon": "~1.0.x",
+    "underscore": "~1.5.x",
     "express": "3.x",
     "ejs": "0.8.x",
-    "request": "~2.30.0",
-    "rss": "~0.2.1",
-    "redis": "~0.10.0"
+    "request": "~2.30.x",
+    "rss": "~0.2.x",
+    "redis": "~0.10.x"
   },
   "license": "MIT",
   "engines": {

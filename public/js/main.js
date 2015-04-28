@@ -44,7 +44,9 @@ var app = {
         '+TreySongz',
         '109226156395384428416',
         '+BarackObama',
-        '103710545634922403702'
+        '103710545634922403702',
+        '101695111306977669026',
+        '+FallonTonight'
     ],
 
     init: function() {
@@ -113,7 +115,6 @@ var app = {
         $div.html(message);
         $div.show();
     },
-
     /**
      * Fetch feed
      */
@@ -142,7 +143,7 @@ var app = {
         }
     },
     /**
-     * Select some random user ID ..yay!
+     * Select some random user ID ...yay!
      */
     onFeelingLucky: function() {
         var gid = this.luckyGPlusers[Math.floor(Math.random() * this.luckyGPlusers.length)];
