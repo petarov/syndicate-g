@@ -41,7 +41,6 @@ var app = {
         '+TyraBanks',
         '+50Cent',
         '101483533411566453214',
-        '+TreySongz',
         '109226156395384428416',
         '+BarackObama',
         '103710545634922403702',
@@ -72,6 +71,8 @@ var app = {
         });
         $(document).on('click', 'a[data-action="clearcache"]', this.onClearCache.bind(this));
         $(document).on('click', 'a[data-action="flucky"]', this.onFeelingLucky.bind(this));
+        $(document).on('keyup', 'input[name="user"]', this.onUpdateButton.bind(this));
+        $(document).on('change', 'input[name="user"]', this.onUpdateButton.bind(this));
     },
 
     doTheAjax: function(requestType, resource, params, headers, cb) {
@@ -140,6 +141,8 @@ var app = {
                 }
                 self.showAlertOK('Cleared cache for ' + query);
             });
+        } else {
+            // TODO: warn
         }
     },
     /**
@@ -149,5 +152,13 @@ var app = {
         var gid = this.luckyGPlusers[Math.floor(Math.random() * this.luckyGPlusers.length)];
         $('#search').val(gid);
         this.onSearch();
+    },
+    /**
+     * 
+     */
+    onUpdateButton: function() {
+        var user = $('#user').val().trim();
+        $('#rsscode').val(
+            '<a href="http://syng.vexelon.net/fetch/'+ user +'"><img src="http://syng.vexelon.net/img/1388174484_rss.png" width="48"/></a>');
     }
 };
