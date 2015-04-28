@@ -154,7 +154,8 @@ var app = {
     onUpdateButton: function() {
         var user = $('#user').val().trim();
         $('#rsscode').val(
-            '<a href="http://syng.vexelon.net/fetch/'+ user +'"><img src="http://syng.vexelon.net/img/1388174484_rss.png" width="48"/></a>');
+            '<a href="http://syng.vexelon.net/fetch/'+ user +'">' + 
+            '<img src="http://syng.vexelon.net/img/1388174484_rss.png" alt="Syndicate-g" width="48"/></a>');
     },
     /**
      *
