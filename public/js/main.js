@@ -59,7 +59,7 @@ var app = {
 
     bindEvents: function() {
         var self = this;
-
+        // $(document).on('click', 'a[data-action="help"]', this.onShowHelp.bind(this));
         $(document).on('click', 'a[data-action="fetch"]', this.onSearch.bind(this));
         $(document).on('click', '#btnSearch', this.onSearch.bind(this));
         $(document).on('keyup', '#search', function(event) {
@@ -160,5 +160,11 @@ var app = {
         var user = $('#user').val().trim();
         $('#rsscode').val(
             '<a href="http://syng.vexelon.net/fetch/'+ user +'"><img src="http://syng.vexelon.net/img/1388174484_rss.png" width="48"/></a>');
+    },
+    /**
+     *
+     */
+    onShowHelp: function() {
+        //TODO
     }
 };
