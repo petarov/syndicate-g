@@ -1,13 +1,8 @@
 {
   "name": "syndicate-g",
-  "description": "Node.js service that converts Google+ public posts to RSS feeds.",
-  "version": "1.0.1",
-  "author": {
-    "name": "Petar Petrov",
-    "email": "",
-    "web": "http://petarov.vexelon.net/"
-  },
-  "homepage": "https://github.com/petarov/syndicate-g",
+  "description": "Convert Google+ public posts to RSS feed.",
+  "version": "1.0.2",
+  "author": "Petar Petrov",
   "repository" : {"type": "git", "url": "https://github.com/petarov/syndicate-g.git"},
   "main": "./lib/syndicate-g",
   "scripts": {
