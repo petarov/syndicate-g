@@ -9,15 +9,32 @@ Required software:
   
   * Redis >= 2.4
 
+Also, you need to get a Google [API key](https://code.google.com/apis/console/) to be able to fetch posts.
+
 ## Getting Started
 
-Copy `config-empty.js` to `config.js`. Edit the config file and adjust the server, db and Google+ settings.
+To install the required dependencies run:
 
-Start the server using `npm start` under Linux or `npm  run-script start_win` under Windows.
+    npm install
+
+Copy `config-empty.js` to `config.js`. Open the config file and adjust the server, db and Google+ settings.
+
+To start the server run:
+
+    npm start 
+
+To start the server under Windows run:
+
+    npm run-script start_win
+
+## Build
+
+TODO
 
 ## Usage
 
-Open `http://localhost:8080` in browser.
+Open `http://localhost:8008` in browser.
 
 ## License
+
 [MIT License](LICENSE)

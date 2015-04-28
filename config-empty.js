@@ -13,7 +13,7 @@ var config = {
      */
     server: {
         host: process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
-        port: parseInt(process.env.OPENSHIFT_NODEJS_PORT) || 8080
+        port: parseInt(process.env.OPENSHIFT_NODEJS_PORT) || 8008
     },
     /**
      * Storage settings
