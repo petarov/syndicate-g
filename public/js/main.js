@@ -23,7 +23,7 @@ var app = {
         '+EnriqueIglesias',
         '+MariahCarey',
         '+Madonna',
-        '+iamwill',
+        '+DavidSpade',
         '100300281975626912157',
         '+AprilSummers',
         '112009945208508693556',
@@ -48,12 +48,7 @@ var app = {
         '+FallonTonight'
     ],
 
-    init: function() {
-        //TODO
-    },
-
     run: function() {
-        this.init();
         this.bindEvents();
     },
 
@@ -75,7 +70,7 @@ var app = {
         $(document).on('change', 'input[name="user"]', this.onUpdateButton.bind(this));
     },
 
-    doTheAjax: function(requestType, resource, params, headers, cb) {
+    doTheAjaxWithMe: function(requestType, resource, params, headers, cb) {
         var self = this;
         $.ajax({type: requestType,
             url: self.ajax.serverUrl + resource,
@@ -102,7 +97,7 @@ var app = {
             params = null;
             headers = null;
         }
-        this.doTheAjax('GET', resource, params, headers, cb);
+        this.doTheAjaxWithMe('GET', resource, params, headers, cb);
     },
     
     showAlertOK: function(message) {
