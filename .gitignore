@@ -1,5 +1,4 @@
 # ignored
-
 lib-cov
 *.seed
 *.log
@@ -15,6 +14,6 @@ results
 
 npm-debug.log
 node_modules
-
+urchin
 config.js
 *.ldb
