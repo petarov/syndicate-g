@@ -9,23 +9,24 @@
 
 var config = require('./config.js');
 var syng = require('./lib/syndicate-g.js')(config).create();
-
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
+var bodyParser = require('body-parser');
+var morgan = require('morgan');
 
-app.configure(function() {
-    // app.locals.pretty = true;
-    app.use(express.bodyParser());
-    app.use(express.static(__dirname + '/public'));
-    app.use(express.logger());
-    app.set('views', __dirname + '/public');
-    app.engine('html', require('ejs').renderFile);
-});
+// app.locals.pretty = true;
+app.use(bodyParser.urlencoded({
+  extended: true
+})); 
+app.use(express.static(__dirname + '/public'));
+app.use(morgan('combined'));
+app.set('views', __dirname + '/public');
+app.engine('html', require('ejs').renderFile);
 
 app.get('/', function(request, response) {
     response.render('index.html', {pretty: true});
-});
+}); 
 
 app.get('/fetch', function(request, response) {
     fetch(request, response);
