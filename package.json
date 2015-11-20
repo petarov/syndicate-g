@@ -1,7 +1,7 @@
 {
   "name": "syndicate-g",
   "description": "Convert Google+ public posts to RSS feed.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Petar Petrov",
   "repository": {
     "type": "git",
