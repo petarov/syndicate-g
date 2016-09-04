@@ -14,12 +14,12 @@
   },
   "dependencies": {
     "body-parser": "^1.14.1",
-    "ejs": "2.3.x",
+    "ejs": "2.5.x",
     "express": "4.x",
     "morgan": "^1.6.1",
-    "nodemon": "~1.8.x",
-    "redis": "~2.3.x",
-    "request": "~2.67.x",
+    "nodemon": "~1.10.x",
+    "redis": "~2.6.x",
+    "request": "~2.74.x",
     "rss": "~1.2.x",
     "underscore": "~1.8.x"
   },
