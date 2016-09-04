@@ -16,6 +16,7 @@
     "body-parser": "^1.14.1",
     "ejs": "2.5.x",
     "express": "4.x",
+    "memory-cache": "^0.1.6",
     "morgan": "^1.6.1",
     "nodemon": "~1.10.x",
     "redis": "~2.6.x",
