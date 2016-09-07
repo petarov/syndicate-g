@@ -1,7 +1,7 @@
 {
   "name": "syndicate-g",
   "description": "Convert Google+ public posts to RSS feed.",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "author": "Petar Petrov",
   "repository": {
     "type": "git",
@@ -14,17 +14,15 @@
   },
   "dependencies": {
     "body-parser": "^1.14.1",
-    "ejs": "2.3.x",
+    "ejs": "2.5.x",
     "express": "4.x",
+    "memory-cache": "^0.1.6",
     "morgan": "^1.6.1",
-    "nodemon": "~1.8.x",
-    "redis": "~2.3.x",
-    "request": "~2.67.x",
+    "nodemon": "~1.10.x",
+    "redis": "~2.6.x",
+    "request": "~2.74.x",
     "rss": "~1.2.x",
     "underscore": "~1.8.x"
   },
-  "license": "MIT",
-  "engines": {
-    "node": ">=0.8"
-  }
+  "license": "MIT"
 }
