@@ -1,7 +1,7 @@
 syndicate-g
 ===========
 
-A Node.js based webapp that converts Google+ _Public_ posts to RSS feed.
+A Node.js based web app that converts Google+ _Public_ posts to RSS feed.
 
 ## Requirements
 
@@ -17,13 +17,13 @@ To install the required dependencies run:
 
     npm install
 
-Copy `config-empty.js` to `config.js`. Open the config file and adjust the server, db and google API key settings.
+Copy `config-empty.js` to `config.js`. Adjust the server, db and google API key settings.
 
-To start the server run:
+To start run:
 
     npm start
 
-To start the server under Windows run:
+To start on Windows run:
 
     npm run-script start_win
 
@@ -31,4 +31,4 @@ Open `http://localhost:8008` in your browser.
 
 ## License
 
-[MIT License](LICENSE)
+[MIT](LICENSE)
