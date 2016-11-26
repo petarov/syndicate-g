@@ -13,7 +13,7 @@ var config = {
   */
   server: {
     host: process.env.SYNG_SERVER_IP || '127.0.0.1',
-    port: parseInt(process.env.SYNG_SERVER_PORT) || 8008
+    port: process.env.SYNG_SERVER_PORT || 8008
   },
   /**
   * Storage settings
